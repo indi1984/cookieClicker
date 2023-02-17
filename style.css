@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  border: 5px dotted red;
+}
+
+.containerLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+  border: 5px dotted green;
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+  border: 5px dotted green;
+}
+
+.counterAdders {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+.clickerContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 5px dotted orange;
+}
+
+#cup {
+  height: 150px;
+  margin: 20px;
+}
+
+.adder {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0;
+  width: 100%;
+  height: 200px;
+  margin: 5px;
+  padding: 2.5px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.adderLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  border: 2.5px;
+  margin: 5px;
+  padding: 2px;
+  border: 5px dotted red;
+  border-radius: 20px;
+}
+
+.adderRight {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  border: 2.5px;
+  margin: 5px;
+  padding: 2px;
+  border: 5px dotted red;
+  border-radius: 20px;
+}
+
+button {
+  width: 50px;
+  padding: 2.5 2.5;
+  margin-top: 10px;
+}
