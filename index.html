@@ -18,14 +18,14 @@
     <div class="mainContainer">
       <div class="containerLeft">
         <div class="clickerContent">
-          <p>Counter</p>
+          <p>Counter: <span id="currentCoffeeCount">0</span></p>
+          <p>Coffee/Sec: <span id="ttlCoffeeSec">1</span></p>
           <img id="cup" src="/img/coffee.jpeg" alt="" />
         </div>
       </div>
+
       <div class="containerRight">
         <h2>Coffee Producers</h2>
-
-
         <div class="counterAdders">
 
           <div class="adder" id="adderOne">
@@ -33,17 +33,37 @@
               <h3>Test</h3>
               <button>Test</button>
             </div>
-            <div class="adderRight"></div>
+            <div class="adderRight">
+              <p><span>Quantity:</span><span id="producerQtyOne">1</span></p>
+              <p><span>Coffee/second:</span><span id="coffeeSecOne">1</span></p>
+              <p><span>Cost:</span><span>10 Coffee</span></p>
+            </div>
           </div>
-          
-          <div class="adder" id="adderTwo"></div>
-          <div class="adder" id="adderThree"></div>
-          <div class="adder" id="adderFour"></div>
-          <div class="adder" id="adderFive"></div>
 
+          <div class="adder" id="adderTwo">
+            <div class="adderLeft">
+              <h3>Test</h3>
+              <button>Test</button>
+            </div>
+            <div class="adderRight">
+              <p><span>Quantity:</span><span id="producerQtyTwo">1</span></p>
+              <p><span>Coffee/second:</span id="coffeeSecTwo"><span>1</span></p>
+              <p><span>Cost:</span><span>50 Coffee</span></p>
+            </div>
+          </div>
+
+          <div class="adder" id="adderThree">
+            <div class="adderLeft">
+              <h3>Test</h3>
+              <button>Test</button>
+            </div>
+            <div class="adderRight">
+              <p><span>Quantity:</span><span id="producerQtyThree">1</span></p>
+              <p><span>Coffee/second:</span><span id="coffeeSecThree">1</span></p>
+              <p><span>Cost:</span><span>100 Coffee</span></p>
+            </div>
+          </div>
         </div>
-
-
       </div>
     </div>
 

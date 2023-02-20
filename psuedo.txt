@@ -1,0 +1,13 @@
+- start at 0 coffees
+- do not start incrementing until after the first click by user
+- increment coffee counter by 1 for each manual user click
+- start coffee per second  at 1
+- once user has achieved 5 on the counter (currentCoffeeCount),
+      show (#adderOne) producer to be available for purchase -- repeat for
+            (adderTwo) and (adderThree)
+- if producer is purchased by clicking on (button), reduce (currentCoffeeCount) 
+      by total cost of purchased adder.   
+- hide available adders if (currentCoffeeCount) is less than cost of producer/adder
+- if adder is purchased, call timer function that adds "x" coffee per second to 
+      coffee per second counter.
+-repeat process indefinitely (or until user refreshes page)
