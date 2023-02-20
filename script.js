@@ -6,6 +6,10 @@ let adderTwo = document.getElementById('adderTwo');
 let adderThree = document.getElementById('adderThree');
 let chemexQuantity = document.querySelector('#quantityOne');
 let chemexCoffeePerSecond = document.querySelector('#coffeePerSecOne');
+let frenchPressQuantity = document.querySelector('#quantityTwo');
+let frenchPressCoffeePerSecond = document.querySelector('#coffeePerSecTwo');
+let mrCoffeeQuantity = document.querySelector('#quantityThree');
+let mrCoffeeCoffeePerSecond = document.querySelector('#coffeePerSecThree');
 
 let producers = [
   {
@@ -30,6 +34,12 @@ let producers = [
 
 chemexQuantity.innerHTML = producers[0].quantity;
 chemexCoffeePerSecond.innerHTML = producers[0].coffeePerSecond;
+
+frenchPressQuantity.innerHTML = producers[1].quantity;
+frenchPressCoffeePerSecond.innerHTML = producers[1].coffeePerSecond;
+
+mrCoffeeQuantity.innerHTML = producers[2].quantity;
+mrCoffeeCoffeePerSecond.innerHTML = producers[2].coffeePerSecond;
 
 let coffeeCount = 0;
 cupImg.addEventListener('click', (event) => {
