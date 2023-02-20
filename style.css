@@ -93,9 +93,10 @@
 }
 
 button {
-  width: 50px;
-  padding: 2.5 2.5;
-  margin-top: 10px;
+  width: 100px;
+  height: 25px;
+  padding: 15;
+  margin-top: 15px;
 }
 
 .adderRight {
