@@ -136,7 +136,7 @@ function updateCoffeePerSec () {
     };
   setInterval(function () {
     coffeeCount += newCoffeeSecSum;
-    currentCoffeeCount.innerHTML = coffeeCount;
+    // currentCoffeeCount.innerHTML = coffeeCount;
     showProducers();
   }, 1000);   
   ttlCoffeeSec.innerHTML = newCoffeeSecSum;
