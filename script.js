@@ -63,18 +63,22 @@ mrCoffeeCoffeePerSecond.innerHTML = producers[2].coffeePerSecond;
 let coffeeCount = 0;
 cupImg.addEventListener('click', (event) => {
   coffeeCount += 1;
+  showProducers();
+});
+
+function showProducers () {
   currentCoffeeCount.innerHTML = coffeeCount;
-    if (coffeeCount > 5) {
+    if (coffeeCount >= 5) {
       adderOne.style.visibility = "visible";
     };
-    if (coffeeCount > 25) {
+    if (coffeeCount >= 25) {
       adderTwo.style.visibility = "visible";
     };
-    if (coffeeCount > 50) {
+    if (coffeeCount >= 50) {
       adderThree.style.visibility = "visible";
     }; 
     return coffeeCount;
-});
+};
 
 
 // * Producer Button Click Events
@@ -134,6 +138,7 @@ function updateCoffeePerSec () {
   setInterval(function () {
     coffeeCount += newCoffeeSecSum;
     currentCoffeeCount.innerHTML = coffeeCount;
+    showProducers();
   }, 1000);   
   ttlCoffeeSec.innerHTML = newCoffeeSecSum;
   return newCoffeeSecSum;
