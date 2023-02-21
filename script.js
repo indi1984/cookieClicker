@@ -10,25 +10,28 @@ let frenchPressQuantity = document.querySelector('#quantityTwo');
 let frenchPressCoffeePerSecond = document.querySelector('#coffeePerSecTwo');
 let mrCoffeeQuantity = document.querySelector('#quantityThree');
 let mrCoffeeCoffeePerSecond = document.querySelector('#coffeePerSecThree');
+let btnOne = document.getElementById('btnOne');
+let btnTwo = document.getElementById('btnTwo');
+let btnThree = document.getElementById('btnThree');
 
 let producers = [
   {
     name: "Chemex",
     quantity: 1,
     coffeePerSecond: 1,
-    cost: "10 Coffee"
+    cost: 10
   },
   {
     name: "French Press",
     quantity: 1,
     coffeePerSecond: 2,
-    cost: "50 Coffee"
+    cost: 50
   },
   {
     name: "Mr. Coffee",
     quantity: 1,
     coffeePerSecond: 5,
-    cost: "100 Coffee"
+    cost: 100
   }
 ];
 
@@ -56,3 +59,47 @@ cupImg.addEventListener('click', (event) => {
     }; 
     return coffeeCount;
 });
+
+
+btnOne.addEventListener('click', chooseProducerOne);
+btnTwo.addEventListener('click', chooseProducerTwo);
+btnThree.addEventListener('click', chooseProducerThree);
+
+function chooseProducerOne () {
+  if (coffeeCount >= producers[0].cost) {
+    producers[0].quantity += 1;
+    chemexQuantity.innerHTML = producers[0].quantity;
+      if (coffeeCount > 0) {
+        coffeeCount = coffeeCount - producers[0].cost;
+      };
+  } else {
+    alert('NOT ENOUGH COFFEE!');
+  };
+  currentCoffeeCount.innerHTML = coffeeCount;
+};
+
+function chooseProducerTwo () {
+  if (coffeeCount >= producers[1].cost) {
+    producers[1].quantity += 1;
+    frenchPressQuantity.innerHTML = producers[1].quantity;
+      if (coffeeCount > 0) {
+        coffeeCount = coffeeCount - producers[1].cost;  
+      };
+  } else {
+    alert('NOT ENOUGH COFFEE!');
+  };
+  currentCoffeeCount.innerHTML = coffeeCount;
+};
+
+function chooseProducerThree () {
+  if (coffeeCount >= producers[2].cost) {
+    producers[2].quantity += 1;
+    mrCoffeeQuantity.innerHTML = producers[2].quantity;
+      if (coffeeCount > 0) {
+        coffeeCount = coffeeCount - producers[2].cost;
+      };
+  } else {
+    alert('NOT ENOUGH COFFEE!');
+  };
+  currentCoffeeCount.innerHTML = coffeeCount;
+};
