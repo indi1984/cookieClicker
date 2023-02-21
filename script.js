@@ -65,7 +65,6 @@ cupImg.addEventListener('click', (event) => {
   coffeeCount += 1;
   showProducers();
 });
-
 function showProducers () {
   currentCoffeeCount.innerHTML = coffeeCount;
     if (coffeeCount >= 5) {
