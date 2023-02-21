@@ -39,7 +39,7 @@ let producers = [
   {
     name: "Mr. Coffee",
     quantity: 0,
-    coffeePerSecond: 5,
+    coffeePerSecond: 3,
     ttlCoffeePerSecond: function () {
       return this.quantity * this.coffeePerSecond;
     },
